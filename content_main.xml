@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/activity_main">
+
+
+    <!-- Parent Container -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- List -->
+        <!-- Height 333.4dp -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="510dp">
+
+            <!-- Column 1 -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Item"
+                    android:textSize="16dp"
+                    android:paddingTop="12dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/customborder"/>
+
+
+                    <ExpandableListView
+                        android:layout_width="120dp"
+                        android:layout_height="233.4dp"></ExpandableListView>
+
+
+
+            </LinearLayout>
+
+            <!-- Column 2 -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Quantity"
+                    android:textSize="16dp"
+                    android:paddingTop="12dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/customborder"
+                    android:backgroundTint="#E5E4E2"
+                    />
+
+                <!-- width 133.3dp -->
+                <ExpandableListView
+                    android:layout_width="120dp"
+                    android:layout_height="233.4dp"
+                    android:footerDividersEnabled="true"
+                    android:headerDividersEnabled="true"
+
+                    ></ExpandableListView
+                    >
+
+
+            </LinearLayout>
+
+            <!-- Column 3 -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Check All"
+                    android:textSize="16dp"
+                    android:paddingTop="12dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/customborder"
+                    android:backgroundTint="#E5E4E2"
+                    />
+
+                <ExpandableListView
+                    android:layout_width="120dp"
+                    android:layout_height="233.4dp"></ExpandableListView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Footer -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+
+            android:layout_gravity="center"
+            >
+            <!-- Linear Layout height 133.3dp -->
+            <Button
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="Add to Inventory"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:backgroundTint="@color/colorPrimaryDark"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
