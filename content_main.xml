@@ -33,18 +33,37 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
                     android:text="Item"
-                    android:textSize="16dp"
+                    android:textSize="20dp"
+                    android:textColor="#0000FF"
                     android:paddingTop="12dp"
                     android:textAlignment="center"
-                    android:background="@drawable/customborder"/>
+                    android:background="@drawable/customborder"
+                    />
 
+                    <FrameLayout
 
-                    <ExpandableListView
-                        android:layout_width="120dp"
-                        android:layout_height="233.4dp"></ExpandableListView>
+                        android:layout_width="104dp"
+                        android:layout_height="460dp"
+                        android:background="@drawable/customborder"
+                        >
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:text="Eggs"
+                            android:paddingTop="12dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:text="Cheese"
+                            android:paddingTop="12dp"
+                            android:layout_gravity="center" />
+
+                    </FrameLayout>
 
 
             </LinearLayout>
@@ -57,24 +76,43 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
                     android:text="Quantity"
-                    android:textSize="16dp"
+                    android:textColor="#0000FF"
+                    android:textSize="20dp"
                     android:paddingTop="12dp"
                     android:textAlignment="center"
                     android:background="@drawable/customborder"
-                    android:backgroundTint="#E5E4E2"
                     />
 
-                <!-- width 133.3dp -->
-                <ExpandableListView
-                    android:layout_width="120dp"
-                    android:layout_height="233.4dp"
-                    android:footerDividersEnabled="true"
-                    android:headerDividersEnabled="true"
+                <FrameLayout
 
-                    ></ExpandableListView
+                    android:layout_width="136dp"
+                    android:layout_height="460dp"
+                    android:background="@drawable/customborder"
                     >
+
+
+                    <Spinner
+                        android:layout_width="46dp"
+                        android:layout_height="43dp"
+
+                        android:id="@+id/spinner"
+                        android:layout_gravity="right|top"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:text="2"
+                        android:paddingTop="12dp"
+                        android:layout_gravity="left|top"
+                        android:id="@+id/textView" />
+
+                </FrameLayout>
+
+                <!-- width 133.3dp -->
+
 
 
             </LinearLayout>
@@ -87,18 +125,38 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Check All"
-                    android:textSize="16dp"
+                    android:layout_height="50dp"
+                    android:textColor="#0000FF"
+                    android:text="Select All"
+                    android:textSize="20dp"
                     android:paddingTop="12dp"
                     android:textAlignment="center"
                     android:background="@drawable/customborder"
-                    android:backgroundTint="#E5E4E2"
                     />
 
-                <ExpandableListView
-                    android:layout_width="120dp"
-                    android:layout_height="233.4dp"></ExpandableListView>
+                <FrameLayout
+                    android:layout_width="144dp"
+                    android:layout_height="460dp"
+                    android:background="@drawable/customborder"
+                    >
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox"
+                        android:layout_gravity="center_horizontal|top"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox2"
+                        android:layout_gravity="center"
+                        android:checked="false" />
+
+
+                </FrameLayout>
 
             </LinearLayout>
 
@@ -121,6 +179,7 @@
                 android:textSize="24sp"
                 android:textColor="#ffffff"
                 android:backgroundTint="@color/colorPrimaryDark"
+
                 />
 
         </LinearLayout>
